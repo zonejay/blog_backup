@@ -62,4 +62,14 @@ data.sort((d1, d2) => {
   }
 })
 
+
+// 获取侧边栏数据
+const sidebarData = data.map(item => {
+  return {
+    text: item.title,
+    link: `/${item.path.slice(0, -5)}`
+  }
+})
+
 await fs.writeFile('./data.json', JSON.stringify(data), 'utf-8')
+await fs.writeFile('./docs/.vitepress/siderbar.ts', `export default ${JSON.stringify(sidebarData)}`)

@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress';
-import DefaultTheme from 'vitepress/theme';
+import siderbar from './siderbar';
 
 export default defineConfig({
     markdown: {
@@ -13,5 +13,11 @@ export default defineConfig({
                 link: '/tags'
             }
         ],
+        sidebar: [
+            {
+                text: '目录',
+                items: siderbar
+            }
+        ]
     }
 })
