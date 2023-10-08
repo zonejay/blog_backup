@@ -40,12 +40,14 @@ function handleClick(page) {
 
 <style lang="postcss" scoped>
 .pagination {
+    --pagenation-bg: var(--vp-c-green);
+    --pagenation-active: var(--vp-c-red);
     display: flex;
 
     & .count {
         margin: 0 4px;
         padding: 4px 8px;
-        box-shadow: 3px 3px royalblue;
+        box-shadow: 3px 3px var(--pagenation-bg);
         cursor: pointer;
         border-radius: 2px;
         transition: all ease .3s;
@@ -55,7 +57,7 @@ function handleClick(page) {
         }
 
         &.count.active {
-            color: red;
+            color: var(--pagenation-active);
         }
     }
 }
