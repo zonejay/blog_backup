@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "concurrently \"nodemon --watch docs/blog -e md bin/index.mjs\" 'vitepress dev docs'",
     "build": "node bin/index.mjs && vitepress build docs",

@@ -40,8 +40,8 @@ function handleClick(page) {
 
 <style lang="postcss" scoped>
 .pagination {
-    --pagenation-bg: var(--vp-c-green);
-    --pagenation-active: var(--vp-c-red);
+    --pagenation-bg: var(--vp-c-green-1);
+    --pagenation-active: var(--vp-c-red-1);
     display: flex;
 
     & .count {
