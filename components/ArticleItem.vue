@@ -1,7 +1,7 @@
 <template>
     <div class="article" @click="goPath(article.path)">
         <div class="article-header">
-            <div class="left">{{ article.title }}</div>
+            <div class="left">{{ article.title }}{{ article.path }}</div>
             <div class="right">{{ article.date }}</div>
         </div>
         <div class="article-line">
