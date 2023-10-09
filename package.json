@@ -16,6 +16,7 @@
     "concurrently": "^7.3.0",
     "gray-matter": "^4.0.3",
     "nodemon": "^2.0.19",
+    "postcss": "^8.4.31",
     "postcss-nesting": "^10.1.10",
     "postcss-preset-env": "^7.7.2",
     "remove-markdown": "^0.5.0",
