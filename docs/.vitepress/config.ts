@@ -1,3 +1,4 @@
+import Unocss from 'unocss/vite'
 import { defineConfig } from 'vitepress';
 import siderbar from './siderbar';
 
@@ -18,6 +19,11 @@ export default defineConfig({
                 text: '目录',
                 items: siderbar
             }
+        ]
+    },
+    vite:{
+        plugins: [
+            Unocss()
         ]
     }
 })
